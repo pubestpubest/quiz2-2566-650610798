@@ -22,6 +22,7 @@ export default function HomePage() {
         {/* Post Owner Example*/}
 
         <PostOwner
+          key={"Pubest"}
           image={"me.jpg"}
           name={"Pubest Ruengkum 650610798"}
           caption={"Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207"}
@@ -34,6 +35,7 @@ export default function HomePage() {
         {/* map-loop render Comment component here */}
         {comments.map((comment) => (
           <Comment
+            key={comment.username}
             userImagePath={comment.userImagePath}
             username={comment.username}
             commentText={comment.commentText}
